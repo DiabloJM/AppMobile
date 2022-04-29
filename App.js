@@ -1,21 +1,11 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Comp from './components/comp';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Something in the way!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+        <Comp />
+
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'red',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
